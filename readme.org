@@ -4,8 +4,6 @@
 My current and past talks and presentations 🎤
 #+end_quote
 
-+----------------------------------------+------------+----------------------|
 | Title                                  |       Date | Event                |
-|----------------------------------------+------------+----------------------|
-| [[./emacs101/emacs101.pdf][Emacs 101: Yeni başlayanlar için Emacs]] | 20-01-2024 | [[https://kommunity.com/samsun-developers/events/cumartesi-bulusmasi-3-6a0f7b9f][Samsun Developers #3]] |
-+----------------------------------------+------------+----------------------|
+|----------------------------------------+------------+----------------------+
+| [[./emacs101/emacs-101.pdf][Emacs 101: Yeni başlayanlar için Emacs]] | 20-01-2024 | [[https://kommunity.com/samsun-developers/events/cumartesi-bulusmasi-3-6a0f7b9f][Samsun Developers #3]] |
