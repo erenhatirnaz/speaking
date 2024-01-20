@@ -98,6 +98,7 @@
 - Meta = Alt = Command
 - Cursor hareketleri
 - Tekrarlanabilirlik =C-u=
+- =kill= ve =yank= kavramlar (cut & paste)
 ** Major Mode & Minor Mode
 - *Major Mode*: Ana düzenleme modunu temsil eder ve genellikle belirli bir görev
   veya dosya türü için özel işlevselliği içerir.
