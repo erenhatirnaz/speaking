@@ -62,7 +62,7 @@
 *** Örnek 2
 #+begin_src emacs-lisp
   (defun is-even-or-odd (num1)
-    (if (= (/ num1 2) 0)
+    (if (= (% num1 2) 0)
         (message-box (format "%d cift sayidir" num1))
       (message-box (format "%d tek sayidir" num1))))
 
