@@ -1,0 +1,156 @@
+#+TITLE: Emacs 101: Yeni başlayanlar için Emacs
+#+AUTHOR: Eren Hatırnaz
+#+EMAIL: erenhatirnaz@gmail.com
+#+DATE: 20 Ocak 2024
+#+LANGUAGE: tr
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation,smaller]
+#+beamer_theme: Copenhagen
+#+BEAMER_HEADER: \subtitle[INST]{Cumartesi Buluşması \#3 \\ Samsun Developers}
+#+OPTIONS: H:2, ^:nil
+
+* Sunum Notları                                                       :noexport:
+- [ ] Emacs sadece developer'ların kullandığı bir araç değil, bilim insanlarından
+  akademisyenlere eğitmenlere kadar çok yaygın bir kitlle tarafından kullanılıyor.
+- [ ] Özgür Yazılım konusu
+- [ ] Elpa vs Melpa
+- [ ] Learning curve çok yüksek, bazen cidden can sıkıcı olabiliyor,
+- [ ] Macrolar
+- [ ] Vakit kalırsa programlama demosu yapabilirim
+- [ ] Repo içerisinde emacs'e ilk giriş için bir doküman var.
+* Ben Kimim
+** Eren Hatırnaz
+#+ATTR_LATEX: :height 2.3cm
+[[file:../_images/profile_photo.jpg]]
+- Technical Product Owner @ [[https://mobillium.com][Mobillium]] (ex Back-End Developer)
+- GNU/Linux Geek
+- [[https://instagram.com/erenhatirnaz][Hobbyist Photographer]]
+- Twitter: [[https://twitter.com/erenhatirnaz][@erenhatirnaz]]
+- [[https://erenhatirnaz.com][erenhatirnaz.com]] • [[mailto:eren@hatirnaz.com.tr][eren@hatirnaz.com.tr]]
+* Emacs nedir?
+** Emacs hakkında
+#+ATTR_LATEX: :height 2cm
+[[file:./_images/emacs_logo.png]]
+
+- Emacs aslında bir text editörden çok daha fazlası... aslında bir "programlama ortamı"!
+- İlk olarak 70'li yıllarda MIT laboratuvarlarında geliştirilmeye başlanıyor.
+- Günümüzde en çok kullanılan GNU Emacs ise 1984 yılında Richard Stallman
+  tarafından geliştirilmeye başlanıyor. Bugün ise GNU projesinin bir parçasıdır.
+- Extensible, Self-documented, Accessible ve en önemlisi Özgür Yazılım
+** Lisp, CommonLisp, EmacsLisp...
+- Lisp, fonksiyonal paradigmaya sahip bir programlama dilidir.
+- Lehçeleri:
+  - CommonLisp
+  - EmacsLisp
+  - AutoLisp
+  - Clojure
+  - ...
+** EmacsLisp örnekleri
+*** Örnek 1
+#+begin_src emacs-lisp
+  (defun sum (num1 num2)
+    (+ num1 num2))
+
+  (sum 4 5)
+#+end_src
+
+#+RESULTS:
+: 9
+
+*** Örnek 2
+#+begin_src emacs-lisp
+  (defun is-even-or-odd (num1)
+    (if (= (/ num1 2) 0)
+        (message-box (format "%d cift sayidir" num1))
+      (message-box (format "%d tek sayidir" num1))))
+
+  (is-even-or-odd 2)
+#+end_src
+
+#+RESULTS:
+: 2 tek sayidir
+** :))
+[[file:./_images/lisp_meme.png]]
+
+#+begin_center
+[[https://res.cloudinary.com/aas-sh/image/upload/v1617292960/blog/2019/07/languages_meme_full_f54fux.jpg][Kaynak]]
+#+end_center
+** Learning Curve
+#+ATTR_LATEX: :height 5cm
+[[file:./_images/emacs_learning_curve.jpg]]
+
+#+begin_center
+"Emacs has a never-ending learning curve"*
+
+*https://chadstovern.com/emacs-is-a-way-of-life/
+#+end_center
+* Temel Kavramlar
+** Frame & Window & Buffer
+- *Frame*: Emacs penceresinin tümüne verilen isim.
+- *Window*: Emacs penceresinin içerisindeki bölmelere verilen isim.
+- *Buffer*: Düzenleme ve metin işleme işlemleri için kullanılan temel kavramlardan biridir.
+  - Temp (Geçici) Buffer
+  - File (Dosya) Buffer
+** Keybindings
+- En temel iki kısayolumuz var: =C-x= ve =M-x=
+- Meta = Alt = Command
+- Cursor hareketleri
+- Tekrarlanabilirlik =C-u=
+** Major Mode & Minor Mode
+- *Major Mode*: Ana düzenleme modunu temsil eder ve genellikle belirli bir görev
+  veya dosya türü için özel işlevselliği içerir.
+  - Aynı buffer üzerinde birden fazla major mode etkin olamaz.
+- *Minor Mode*: Major modları tamamlar, ek işlevselliği sağlar ve genellikle
+  belirli özelliklere odaklanır.
+  - İstediğiniz kadar minor mode aktif edebilirsiniz.
+** Modeline
+- Modern dünyada "status bar" diye bildiğimiz kısımdır. Emacs penceresinin en
+  altında yer alır.
+* Hızlandırılmış Emacs Turu
+** org-mode - Not defteri, Ajanda ve birçok şey
+- Tamamen plaintext şekilde çalışan işlevsel bir 'not defteri' eklentisi.
+- Kendi web sitesinden detaylıca inceleyebilirsiniz:
+  https://orgmode.org/features.html
+- Org-mode üzerine kurulu bir knowledge management system: [[https://www.orgroam.com/][org-roam]]
+- Benim elim ayağım <3
+** magit - Git Gui
+- Emacs içerisinde çalışan bir Git Gui'si diyebiliriz.
+- Command line deneyimine en yakın çözüm.
+- Elim ayağım 2 <3
+** dired - File & Diretory Management
+- Emacs içerisinde yer alan bir dosya gezgini diyebiliriz.
+** tetris
+- Çocukluğumuzun efsane oyunundan mahrum kalmıyorsunuz :)
+** mu4e - Email Client
+- Emacs içerisinden e-maillerinizi yönetmenize olanak sağlayan bir paket.
+** eww - Web Browser
+- Emacs içerisindeki ilkel bir web tarayıcı.
+** erc - IRC Client
+- Emacs içerisindeki bir IRC clienti.
+** exwm - Window Manager
+- Emacs'i sisteminizin window manager'ı olarak kullanmanıza olanacak sağlayan bir
+  paket.
+** evil-mode - Vim-like mode
+- Vim keybinding'lerine alışkın insanlar için Emacs içerisine vim
+  alışkanlıklarını getiren bir paket.
+* Kapanış
+** Kaynaklar
+- Bu sunumu şu github reposunda bulabilirsiniz: https://github.com/erenhatirnaz/speaking
+- Farklı Emacs dağıtımları:
+  - [[https://github.com/syl20bnr/spacemacs/tree/develop][spacemacs]]
+  - [[https://github.com/doomemacs/doomemacs][Doom Emacs]]
+- Keyword =emacs start kit=
+- Youtube Kanalı: https://www.youtube.com/@SystemCrafters
+** Soru & Cevap
+#+begin_center
+Emacs hakkında merak ettikleriniz...
+#+end_center
+** Teşekkürler!
+#+begin_center
+**Beni dinlediğiniz için teşekkür ederim!**
+
+\vspace{1in}
+
+Twitter: @erenhatirnaz • eren@hatirnaz.com.tr
+#+end_center
