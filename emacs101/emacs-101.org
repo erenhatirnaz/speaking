@@ -137,11 +137,10 @@
   alışkanlıklarını getiren bir paket.
 * Kapanış
 ** Kaynaklar
-- Bu sunumu şu github reposunda bulabilirsiniz: https://github.com/erenhatirnaz/speaking
+- Keyword =emacs start kit=
 - Farklı Emacs dağıtımları:
   - [[https://github.com/syl20bnr/spacemacs/tree/develop][spacemacs]]
   - [[https://github.com/doomemacs/doomemacs][Doom Emacs]]
-- Keyword =emacs start kit=
 - Youtube Kanalı: https://www.youtube.com/@SystemCrafters
 - Benim Emacs ayarlarım: https://github.com/erenhatirnaz/dotfiles/tree/master/emacs/.emacs.d
 ** Soru & Cevap
@@ -149,6 +148,9 @@
 Emacs hakkında merak ettikleriniz...
 #+end_center
 ** Teşekkürler!
+#+ATTR_LATEX: :height 3cm
+[[file:../_images/repo_qrcode.png]]
+
 #+begin_center
 **Beni dinlediğiniz için teşekkür ederim!**
 
