@@ -1,0 +1,11 @@
+#+TITLE: Speakings
+
+#+begin_quote
+My current and past talks and presentations 🎤
+#+end_quote
+
++----------------------------------------+------------+----------------------|
+| Title                                  |       Date | Event                |
+|----------------------------------------+------------+----------------------|
+| Emacs 101: Yeni başlayanlar için Emacs | 20-01-2024 | [[https://kommunity.com/samsun-developers/events/cumartesi-bulusmasi-3-6a0f7b9f][Samsun Developers #3]] |
++----------------------------------------+------------+----------------------|
