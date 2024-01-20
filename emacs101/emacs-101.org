@@ -109,6 +109,25 @@
 ** Modeline
 - Modern dünyada "status bar" diye bildiğimiz kısımdır. Emacs penceresinin en
   altında yer alır.
+** Macrolar
+#+begin_src text
+  Merhaba dünya! Bu, bir örnek metindir. Hello kelimesi sıkça kullanılmaktadır.
+  Hello, dünyanın her yerinden insanları birleştiren evrensel bir selamlaşma
+  şeklidir. Hello demek, farklı kültürler arasında iletişimi kolaylaştırabilir.
+
+  Hello, sadece bir İngilizce kelime değil, aynı zamanda insanların birbirleriyle
+  tanışmalarına ve iletişim kurmalarına yardımcı olan güçlü bir ifadedir. Bir
+  topluluğun merkezi olabilir ve insanları bir araya getirebilir.
+
+  Hello, samimiyet ve karşılıklı anlayışın bir ifadesi olabilir. İnsanlar
+  arasındaki güçlü bağları ifade etmenin yanı sıra, yeni maceralara ve keşiflere de
+  kapı aralayabilir.
+
+  Hello dünyasını keşfetmek için bu metni kullanarak yukarıdaki örnek makroyu
+  deneyebilirsiniz. Belirli bir "hello" kelimesini seçin ve makro ile tüm "hello"
+  kelimelerini dolaşarak "hi" ile değiştirin. Bu, metni hızlı bir şekilde
+  düzenlemenin ve değişiklik yapmanın etkili bir yoludur.
+#+end_src
 * Hızlandırılmış Emacs Turu
 ** org-mode - Not defteri, Ajanda ve birçok şey
 - Tamamen plaintext şekilde çalışan işlevsel bir 'not defteri' eklentisi.
