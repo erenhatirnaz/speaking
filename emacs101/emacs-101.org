@@ -19,6 +19,7 @@
 - [ ] Macrolar
 - [ ] Vakit kalırsa programlama demosu yapabilirim
 - [ ] Repo içerisinde emacs'e ilk giriş için bir doküman var.
+- [ ] =dotfiles= kültüründen bahset.
 * Ben Kimim
 ** Eren Hatırnaz
 #+ATTR_LATEX: :height 2.3cm
@@ -142,6 +143,7 @@
   - [[https://github.com/doomemacs/doomemacs][Doom Emacs]]
 - Keyword =emacs start kit=
 - Youtube Kanalı: https://www.youtube.com/@SystemCrafters
+- Benim Emacs ayarlarım: https://github.com/erenhatirnaz/dotfiles/tree/master/emacs/.emacs.d
 ** Soru & Cevap
 #+begin_center
 Emacs hakkında merak ettikleriniz...
